@@ -58,3 +58,13 @@ golangのvendoringにglideを使ってる場合は、gometalinter起動時のパ
   ]
 }
 ```
+
+### gopath
+
+プロジェクト単位でgopathを切り替える方法して、'.envrc'を使っている場合は、プロジェクトのカレントディレクトから
+atomを起動しないとgo-plusで読み込んでいる各パッケージがちゃんとgopathを参照できなくて正常に動かないので注意！
+
+```
+cd /goプロジェクト
+atom .
+```
