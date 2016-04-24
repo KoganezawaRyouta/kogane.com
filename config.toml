@@ -1,3 +1,5 @@
 baseurl = "http://koganezawaryouta.github.io/"
 languageCode = "jp"
-title = "Kogane.com"
+title = "kogane.com"
+[Params]
+  logo = "img/avatar.jpg"
