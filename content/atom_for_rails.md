@@ -10,6 +10,7 @@ title = "atom_for_rails"
 ## linter
 
 ### install
+
 ```
 $ rbenv exec gem install rubocop
 $ rbenv exec gem install haml-lint
@@ -19,6 +20,7 @@ $ apm install linter-ruby
 ```
 
 ### Settings
+
 ```~/.atom/config.cson
 'linter-rubocop':
   'executablePath': rubocopのパス（rbenv which rubocop）
@@ -28,6 +30,7 @@ $ apm install linter-ruby
 ```
 
 ### yamlのloadでinvalid byte sequenceになる場合
+
 下記を追加
 
 ```~/.atom/packages/linter-rubocop/index.coffee
@@ -37,6 +40,7 @@ process.env.LANG = 'ja_JP.UTF-8'
 ## rubocop-auto-correct(rubocop -aの自動化)
 
 ### install
+
 ```
 $ apm install rubocop-auto-correct
 ```
@@ -44,6 +48,7 @@ $ apm install rubocop-auto-correct
 ## Haml Syntax highlighting
 
 ### install
+
 ```
 $ apm install language-haml
 ```
