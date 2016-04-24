@@ -3,3 +3,8 @@ languageCode = "jp"
 title = "kogane.com"
 [Params]
   logo = "img/avataro.jpg"
+[Author]
+  email = "ryouta.koganezawa@gmail.com"
+  facebook = "ryouta.kogaenzawa"
+  github = "KoganezawaRyouta"
+  twitter = "kogane5513"
