@@ -34,8 +34,9 @@ go-plusを入れると自動的に下記パッケージも入る。linter, gofmt
 ├── tester-go@1.0.4
 ```
 
-### golangの開発支援ツール群（基本go-plusから呼び出される）
-go-plusで使ってるライブラリーを入れ忘れてもgo-configのパッケージが検知してgo-getパッケージを使って自動で入れてくれる。
+### Golangの開発支援ツール群（基本go-plusから呼び出される）
+go-plusで使ってるライブラリーをインストールする。
+入れ忘れてもgo-configのパッケージが検知してgo-getパッケージを使って自動で入れてくれる。
 
 ```
 $ go get -v github.com/alecthomas/gometalinter
@@ -45,11 +46,15 @@ $ go get -v github.com/rogpeppe/godef
 $ go get -v golang.org/x/tools/cmd/oracle
 ```
 
-### Settings
+### Glide: Vendor Package Management for Golang
 
 golangのvendoringにglideを使ってる場合は、gometalinter起動時のパラメータに"--vendor"をつける。
 環境変数（GO15VENDOREXPERIMENT）の値を見てvendor配下を参照するようになる。
-※ preferencesのsettingsからもgometalinterのパラメータ設定するとconfig.csonが壊れる。ちゃんと反映されないから自分でconfig.csonををいじる方が無難
+
+**注意**
+
+preferencesのsettingsからもgometalinterのパラメータ設定することはできるけど、config.csonが壊れる。
+ちゃんと反映されないから自分でconfig.csonををいじる方が無難
 
 ```~/.atom/config.cson
 "gometalinter-linter": {
